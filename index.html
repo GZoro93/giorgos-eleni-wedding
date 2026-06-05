@@ -507,14 +507,14 @@
       <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
         <circle cx="18" cy="16" r="7"/><path d="M18 2C10.3 2 4 8.3 4 16c0 10.5 14 20 14 20S32 26.5 32 16C32 8.3 25.7 2 18 2z"/>
       </svg>
-      <h3>Τόπος Τελετής</h3>
+      <h3>Τοποθεσία Τελετής</h3>
       <p><b>Ιερός Ναός Αγίου Γεωργίου</b><br/>XFX6+4G8, Κακουλή Σοφοκλή, Λύμπια 2566<br/><br/><a href="https://maps.app.goo.gl/DGnffm3kWECBiVo87" target="_blank">Δες στον χάρτη →</a></p>
     </div>
 	<div class="detail-card">
       <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
         <circle cx="18" cy="16" r="7"/><path d="M18 2C10.3 2 4 8.3 4 16c0 10.5 14 20 14 20S32 26.5 32 16C32 8.3 25.7 2 18 2z"/>
       </svg>
-     <h3>Τόπος Δεξίωσης</h3>
+     <h3>Τοποθεσία Δεξίωσης</h3>
       <p><b>Ampeleon – Venue</b><br/>Παναγια των Αμπελιων 21, Αραδίππου 7101<br/><br/><a href="https://maps.app.goo.gl/7VjzFkxTyMNN4Q528" target="_blank">Δες στον χάρτη →</a></p>
     </div>
     <div class="detail-card">
@@ -522,7 +522,7 @@
         <circle cx="18" cy="18" r="14"/><path d="M18 9v10l6 3"/>
       </svg>
       <h3>Πρόγραμμα</h3>
-      <p>3:30 μ.μ. — Άφιξη καλεσμένων<br/>4:00 μ.μ. — Τελετή<br/>5:00 μ.μ. — Cocktail hour<br/>6:30 μ.μ. — Δείπνο & χορός</p>
+      <p><br/>16:00 μ.μ. — Τελετή Μυστηρίου Γάμου<br/>18:00 μ.μ. — Χαιρετισμός του Ζευγαριού<br/>20:00 μ.μ. — Δείπνο & χορός</p>
     </div>
     <div class="detail-card">
       <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -536,7 +536,7 @@
         <path d="M22 2H14a2 2 0 0 0-2 2v3H8a2 2 0 0 0-2 2v21a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-4V4a2 2 0 0 0-2-2z"/><path d="M14 16h8M14 21h8M14 26h4"/>
       </svg>
       <h3>Επικοινωνία</h3>
-      <p>Wedding Planner: Eleni Georgiadou<br/>+357 99 123 456<br/><br/><a href="mailto:giorgosolympios@hotmail.com">giorgosolympios@hotmail.com</a></p>
+      <p>Wedding Planner: Eleni Georgiadou<br/><br/><br/><a href="mailto:giorgoseleni.wedding@gmail.com">giorgoseleni.wedding@gmail.com</a></p>
     </div>
   </div>
 
@@ -562,7 +562,7 @@
       <div class="rsvp-info fade-in">
         <p>Θα χαρούμε πολύ να σε έχουμε κοντά μας σε αυτή τη μοναδική μέρα. Παρακαλούμε συμπλήρωσε τη φόρμα για να γνωρίζουμε αν θα είσαι μαζί μας.</p>
         <p><strong>Προθεσμία RSVP:</strong> 26 Αυγούστου 2026</p>
-        <p>Για ερωτήσεις επικοινώνησε μαζί μας στο <strong>giorgosolympios@hotmail.com</strong></p>
+        <p>Για ερωτήσεις επικοινώνησε μαζί μας στο <strong>giorgoseleni.wedding@gmail.com</strong></p>
         <div class="rsvp-deadline">Απάντηση έως 26 · 08 · 2026</div>
       </div>
 
@@ -583,7 +583,7 @@
               <label for="rAttending">Παρουσία *</label>
               <select id="rAttending" name="attending" required>
                 <option value="">Επίλεξε...</option>
-                <option value="yes">✓ Θα παραστώ</option>
+                <option value="yes">✓ Θα παρευρεθώ</option>
                 <option value="no">✗ Δεν μπορώ να παραστώ</option>
               </select>
             </div>
@@ -593,7 +593,7 @@
                 <option value="1">1 άτομο</option>
                 <option value="2">2 άτομα</option>
                 <option value="3">3 άτομα</option>
-                <option value="4">4+ άτομα</option>
+                <option value="4">4 άτομα</option>
               </select>
             </div>
           </div>
@@ -732,7 +732,7 @@ document.getElementById('rsvpForm').addEventListener('submit', async (e) => {
   };
 
   try {
-    const res = await fetch('https://formspree.io/f/xrevbrnr', {
+    const res = await fetch('https://formspree.io/f/xjgdgbbv', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(data)
