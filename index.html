@@ -2,7 +2,7 @@
 <html lang="el">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
   <title>Γιώργος & Ελένη — Ο Γάμος μας</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -46,7 +46,7 @@
 
     /* ── NAV ── */
     nav {
-      position: fixed; top: 0; left: 0; right: 0;
+      position: fixed; top: env(safe-area-inset-top); left: 0; right: 0;
       height: var(--nav-h);
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 48px;
