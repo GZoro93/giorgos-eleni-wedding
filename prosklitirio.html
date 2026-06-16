@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Γιώργος & Ελένη — Προσκλητήριο</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'DM Sans',sans-serif;
+    background:#f4f1ec;
+    display:flex; flex-direction:column; align-items:center;
+    min-height:100vh; padding:24px 16px 48px;
+  }
+  .card{
+    max-width:480px; width:100%;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 40px rgba(0,0,0,0.08);
+  }
+  .card img{
+    width:100%; display:block;
+  }
+  .cta-wrap{ padding:24px 24px 28px; text-align:center; }
+  .cta-text{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.15rem; color:#3a3a38; margin-bottom:16px; line-height:1.5;
+  }
+  .cta-btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    width:100%;
+    background:#0a0a0a; color:#fff;
+    text-decoration:none;
+    padding:16px 24px;
+    font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500;
+    border-radius:10px;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .cta-btn:active{ transform: scale(0.98); }
+  .cta-btn svg{ transition: transform 0.2s; }
+  .cta-sub{
+    margin-top:14px; font-size:0.78rem; color:#9a9a96;
+  }
+  .guest-count{
+    display:none;
+    margin-bottom:18px;
+    padding:12px 20px;
+    background:#f4f1ec;
+    border-radius:10px;
+    font-size:0.85rem;
+    color:#5a5a56;
+    letter-spacing:0.02em;
+  }
+  .guest-count strong{ color:#0a0a0a; font-weight:600; }
+  .contact-line{
+    margin-top:14px; font-size:0.78rem; color:#9a9a96;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img src="invitation.png" alt="Προσκλητήριο Γάμου Γιώργος & Ελένη"/>
+    <div class="cta-wrap">
+      <div class="guest-count" id="guestCount"></div>
+      <p class="cta-text">Όλες οι λεπτομέρειες & RSVP στην ιστοσελίδα μας</p>
+      <a class="cta-btn" id="ctaBtn" href="https://gzoro93.github.io/giorgos-eleni-wedding">
+        Δες την ιστοσελίδα μας
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p class="cta-sub">Λεπτομέρειες τελετής, δεξίωσης, RSVP & ημερολόγιο</p>
+      <p class="contact-line">Γ.: 99725326, Ε.: 99094772</p>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const atoma = params.get('atoma');
+    if (atoma) {
+      const box = document.getElementById('guestCount');
+      box.innerHTML = 'Αρ. Ατόμων: <strong>' + atoma + (atoma === '1' ? ' άτομο' : ' άτομα') + ' | Π.Α. μέχρι 01/08/2026' + '</strong>' ;
+      box.style.display = 'block';
+
+      // Πέρασμα του αριθμού ατόμων και στο RSVP link
+      const btn = document.getElementById('ctaBtn');
+      btn.href = btn.href + '?atoma=' + encodeURIComponent(atoma);
+    }
+  </script>
+</body>
+</html>
