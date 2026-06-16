@@ -764,6 +764,16 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
   });
 });
+
+// ── Auto-fill αριθμού ατόμων από το προσκλητήριο ──
+const urlParams = new URLSearchParams(window.location.search);
+const guestsParam = urlParams.get('atoma');
+if (guestsParam) {
+  const guestsSelect = document.getElementById('rGuests');
+  if (guestsSelect.querySelector(`option[value="${guestsParam}"]`)) {
+    guestsSelect.value = guestsParam;
+  }
+}
 </script>
 </body>
 </html>
