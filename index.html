@@ -464,8 +464,76 @@
     </a>
   </div>
   <div class="hero-right">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1400&auto=format&fit=crop" alt="Wedding"/>
+    <img class="hero-img" src="gaming-hero.jpg" alt="Wedding Gaming" style="filter: grayscale(10%) brightness(0.75);"/>
+    <!-- Gaming SVG overlay -->
+    <div style="position:absolute; inset:0; pointer-events:none;">
+      <svg width="100%" height="100%" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+
+
+
+        <!-- HUD top-left: P1 -->
+        <rect x="60" y="28" width="52" height="16" rx="3" fill="#000" opacity="0.45"/>
+        <text x="86" y="40" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#c9a84c" opacity="0.9" letter-spacing="1">&#x25B6; P1</text>
+        <rect x="60" y="50" width="90" height="5" rx="1" fill="#000" opacity="0.4"/>
+        <rect x="60" y="50" width="90" height="5" rx="1" fill="#c9a84c" opacity="0.7"/>
+        <line x1="90" y1="50" x2="90" y2="55" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+        <line x1="120" y1="50" x2="120" y2="55" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+        <g transform="translate(154, 48)" opacity="0.8">
+          <rect x="1" y="0" width="3" height="3" fill="#c9a84c"/>
+          <rect x="5" y="0" width="3" height="3" fill="#c9a84c"/>
+          <rect x="0" y="3" width="9" height="3" fill="#c9a84c"/>
+          <rect x="1" y="6" width="7" height="3" fill="#c9a84c"/>
+          <rect x="2" y="9" width="5" height="3" fill="#c9a84c"/>
+          <rect x="3" y="12" width="3" height="2" fill="#c9a84c"/>
+        </g>
+
+        <!-- HUD top-right: P2 -->
+        <rect x="568" y="28" width="52" height="16" rx="3" fill="#000" opacity="0.45"/>
+        <text x="594" y="40" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#c9a84c" opacity="0.9" letter-spacing="1">P2 &#x25C0;</text>
+        <rect x="530" y="50" width="90" height="5" rx="1" fill="#000" opacity="0.4"/>
+        <rect x="530" y="50" width="90" height="5" rx="1" fill="#c9a84c" opacity="0.7"/>
+        <line x1="560" y1="50" x2="560" y2="55" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+        <line x1="590" y1="50" x2="590" y2="55" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+        <g transform="translate(515, 48)" opacity="0.8">
+          <rect x="1" y="0" width="3" height="3" fill="#c9a84c"/>
+          <rect x="5" y="0" width="3" height="3" fill="#c9a84c"/>
+          <rect x="0" y="3" width="9" height="3" fill="#c9a84c"/>
+          <rect x="1" y="6" width="7" height="3" fill="#c9a84c"/>
+          <rect x="2" y="9" width="5" height="3" fill="#c9a84c"/>
+          <rect x="3" y="12" width="3" height="2" fill="#c9a84c"/>
+        </g>
+
+        <!-- VS badge center top -->
+        <rect x="316" y="24" width="48" height="22" rx="3" fill="#c9a84c" opacity="0.12"/>
+        <rect x="316" y="24" width="48" height="22" rx="3" fill="none" stroke="#c9a84c" stroke-width="0.8" opacity="0.5"/>
+        <text x="340" y="39" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#c9a84c" opacity="0.85" letter-spacing="2">VS</text>
+
+
+
+        <!-- Pixel Hearts mid sides -->
+        <g transform="translate(58, 220)" opacity="0.55">
+          <rect x="3" y="0"  width="7" height="7" fill="#c9a84c"/>
+          <rect x="12" y="0" width="7" height="7" fill="#c9a84c"/>
+          <rect x="0" y="7"  width="22" height="7" fill="#c9a84c"/>
+          <rect x="0" y="14" width="22" height="7" fill="#c9a84c"/>
+          <rect x="3" y="21" width="16" height="7" fill="#c9a84c"/>
+          <rect x="6" y="28" width="10" height="7" fill="#c9a84c"/>
+          <rect x="9" y="35" width="4" height="7" fill="#c9a84c"/>
+        </g>
+        <g transform="translate(600, 220)" opacity="0.55">
+          <rect x="3" y="0"  width="7" height="7" fill="#c9a84c"/>
+          <rect x="12" y="0" width="7" height="7" fill="#c9a84c"/>
+          <rect x="0" y="7"  width="22" height="7" fill="#c9a84c"/>
+          <rect x="0" y="14" width="22" height="7" fill="#c9a84c"/>
+          <rect x="3" y="21" width="16" height="7" fill="#c9a84c"/>
+          <rect x="6" y="28" width="10" height="7" fill="#c9a84c"/>
+          <rect x="9" y="35" width="4" height="7" fill="#c9a84c"/>
+        </g>
+
+      </svg>
+    </div>
     <div class="hero-overlay">
+      <div style="font-family:'Courier New',monospace; font-size:0.6rem; letter-spacing:0.2em; color:var(--gold-light); opacity:0.7; margin-bottom:10px; text-align:left;">INSERT COIN TO CONTINUE</div>
       <div class="countdown-row" id="countdown">
         <div class="cd-block"><span class="cd-num" id="cd-days">--</span><span class="cd-label">Μέρες</span></div>
         <div class="cd-sep">·</div>
@@ -485,10 +553,12 @@
   <div class="story-grid">
     <div class="story-text">
       <span class="section-label">01 — Ιστορία μας</span>
-      <h2 class="section-title">Πώς ξεκίνησαν<br/><em>τα πάντα</em></h2>
-      <p><b>COMING SOON</b></p>
-      <p><b></b></p>
-    </div>
+      <h2 class="section-title">Και κάπως έτσι ξεκίνησε το δικό<br/><em>μας για πάντα.</em></h2>
+	  <p style="font-style:italic; font-family:var(--font-display); font-size:1.1rem; color:var(--gray-600); margin-bottom:20px;">Δύο άνθρωποι. Μια σύνδεση. Ένα σύμπαν.</p>
+      <p>Ένα μήνυμα έγινε συζήτηση. Η συζήτηση έγινε χιλιάδες στιγμές. Και κάθε νέο επίπεδο τους έφερνε πιο κοντά.</p>
+      <p>Ο ένας έγινε το κομμάτι που έλειπε από τον άλλο. Και μαζί άρχισαν να χτίζουν κάτι μεγαλύτερο από ό,τι φαντάζονταν.</p>
+      <p style="font-style:italic; font-family:var(--font-display); font-size:1.05rem; color:var(--gray-600); margin-top:32px;">Τώρα χτίζουν τον πιο σημαντικό κόσμο από όλους: Τον Δικό Τους.</p>
+      </div>
     <div class="story-image-wrap">
       <img src="Our story.jpg" alt="Our story"/>
     </div>
@@ -503,7 +573,22 @@
   <h2 class="section-title">Όλα όσα πρέπει<br/><em>να γνωρίζεις</em></h2>
 
   <div class="details-grid">
-    <div class="detail-card">
+    	<div class="detail-card">
+      <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="18" cy="16" r="7"/><path d="M18 2C10.3 2 4 8.3 4 16c0 10.5 14 20 14 20S32 26.5 32 16C32 8.3 25.7 2 18 2z"/>
+      </svg>
+     <h3>Αλλάματα Γαμπρού</h3>
+      <p><b>Πατρικό Στους Εργάτες</b><br/><br/><br/><a href="https://maps.app.goo.gl/keHJWE6QdRAChijS8" target="_blank">Δες στον χάρτη →</a></p>
+    </div>
+		<div class="detail-card">
+      <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="18" cy="16" r="7"/><path d="M18 2C10.3 2 4 8.3 4 16c0 10.5 14 20 14 20S32 26.5 32 16C32 8.3 25.7 2 18 2z"/>
+      </svg>
+     <h3>Αλλάματα Νυμφης</h3>
+      <p><b>"Στου Ζηνή"</b><br/>Γρηγόρη Αυξεντίου 10, Λύμπια<br/><br/><a href="https://maps.app.goo.gl/nKTq7exyGR5N7qJUA" target="_blank">Δες στον χάρτη →</a></p>
+    </div>
+	
+	<div class="detail-card">
       <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
         <circle cx="18" cy="16" r="7"/><path d="M18 2C10.3 2 4 8.3 4 16c0 10.5 14 20 14 20S32 26.5 32 16C32 8.3 25.7 2 18 2z"/>
       </svg>
@@ -517,13 +602,87 @@
      <h3>Τοποθεσία Δεξίωσης</h3>
       <p><b>Ampeleon – Venue</b><br/>Παναγια των Αμπελιων 21, Αραδίππου 7101<br/><br/><a href="https://maps.app.goo.gl/7VjzFkxTyMNN4Q528" target="_blank">Δες στον χάρτη →</a></p>
     </div>
-    <div class="detail-card">
-      <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
-        <circle cx="18" cy="18" r="14"/><path d="M18 9v10l6 3"/>
-      </svg>
-      <h3>Πρόγραμμα</h3>
-      <p><br/>16:00 μ.μ. — Τελετή Μυστηρίου Γάμου<br/>18:00 μ.μ. — Χαιρετισμός του Ζευγαριού<br/>20:00 μ.μ. — Δείπνο & χορός</p>
+	<div class="detail-card">
+  <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="18" cy="18" r="14"/><path d="M18 9v10l6 3"/>
+  </svg>
+  <h3>Πρόγραμμα</h3>
+
+  <div style="margin-top:16px;">
+    <div style="font-family:'Courier New',monospace; font-size:11px; color:#9a7a2e; letter-spacing:4px; margin-bottom:20px; padding:12px 0; border-top:1px solid var(--gray-200); border-bottom:1px solid var(--gray-200);">
+      &#x25B6; QUEST LOG &#x2014; 06.09.2026
     </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px; padding:16px 0; border-bottom:1px solid var(--gray-200);">
+      <div style="min-width:72px;">
+        <span style="font-family:var(--font-display); font-size:30px; font-weight:400; color:#9a7a2e; line-height:1;">12:00</span>
+      </div>
+      <div>
+        <div style="font-size:15px; color:var(--black); margin-bottom:2px;">Αλλάματα Γαμπρού</div>
+        <div style="font-size:0.82rem; color:var(--gray-400); margin-top:2px;">Στους Εργάτες</div>
+        <span style="display:inline-block; margin-top:6px; font-family:'Courier New',monospace; font-size:8px; letter-spacing:2px; color:#8a6e20; border:1px solid #b89540; padding:2px 6px; border-radius:2px;">P1 &#x2014; GROOM</span>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px; padding:16px 0; border-bottom:1px solid var(--gray-200);">
+      <div style="min-width:72px;">
+        <span style="font-family:var(--font-display); font-size:30px; font-weight:400; color:#9a7a2e; line-height:1;">14:00</span>
+      </div>
+      <div>
+        <div style="font-size:15px; color:var(--black); margin-bottom:2px;">Αλλάματα Νύμφης</div>
+        <div style="font-size:0.82rem; color:var(--gray-400); margin-top:2px;">"Στου Ζηνή" &#x2013; Λύμπια</div>
+        <span style="display:inline-block; margin-top:6px; font-family:'Courier New',monospace; font-size:8px; letter-spacing:2px; color:#8a6e20; border:1px solid #b89540; padding:2px 6px; border-radius:2px;">P2 &#x2014; BRIDE</span>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px; padding:16px 0; border-bottom:1px solid var(--gray-200);">
+      <div style="min-width:72px;">
+        <span style="font-family:var(--font-display); font-size:30px; font-weight:400; color:#9a7a2e; line-height:1;">16:00</span>
+      </div>
+      <div>
+        <div style="font-size:15px; color:var(--black); margin-bottom:2px;">Ιερός Ναός Αγίου Γεωργίου, Λύμπια</div>
+        <span style="display:inline-block; margin-top:6px; font-family:'Courier New',monospace; font-size:8px; letter-spacing:2px; color:#8a6e20; border:1px solid #b89540; padding:2px 6px; border-radius:2px;">MAIN QUEST</span>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px; padding:16px 0; border-bottom:1px solid var(--gray-200);">
+      <div style="min-width:72px;">
+        <span style="font-family:var(--font-display); font-size:30px; font-weight:400; color:#9a7a2e; line-height:1;">19:00</span>
+      </div>
+      <div>
+        <div style="font-size:15px; color:var(--black); margin-bottom:2px;">Συγχαρητήρια &amp; Δείπνο</div>
+        <div style="font-size:0.82rem; color:var(--gray-400); margin-top:2px;">Ampeleon Venue, Αραδίππου</div>
+        <span style="display:inline-block; margin-top:6px; font-family:'Courier New',monospace; font-size:8px; letter-spacing:2px; color:#8a6e20; border:1px solid #b89540; padding:2px 6px; border-radius:2px;">XP BONUS</span>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px; padding:16px 0; border-bottom:1px solid var(--gray-200);">
+      <div style="min-width:72px;">
+        <span style="font-family:var(--font-display); font-size:30px; font-weight:400; color:#9a7a2e; line-height:1;">21:30</span>
+      </div>
+      <div>
+        <div style="font-size:15px; color:var(--black); margin-bottom:2px;">Είσοδος &amp; Κοπή Τούρτας</div>
+        <span style="display:inline-block; margin-top:6px; font-family:'Courier New',monospace; font-size:8px; letter-spacing:2px; color:#8a6e20; border:1px solid #b89540; padding:2px 6px; border-radius:2px;">ACHIEVEMENT UNLOCKED</span>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:flex-start; gap:20px; padding:16px 0;">
+      <div style="min-width:72px;">
+        <span style="font-family:var(--font-display); font-size:30px; font-weight:400; color:#9a7a2e; line-height:1;">22:30</span>
+      </div>
+      <div>
+        <div style="font-size:15px; color:var(--black); margin-bottom:2px;">Πρώτος Χορός &amp; Party Starts</div>
+        <span style="display:inline-block; margin-top:6px; font-family:'Courier New',monospace; font-size:8px; letter-spacing:2px; color:#8a6e20; border:1px solid #b89540; padding:2px 6px; border-radius:2px;">FINAL BOSS</span>
+      </div>
+    </div>
+
+    <div style="font-family:'Courier New',monospace; font-size:9px; color:#9a7a2e; letter-spacing:2px; margin-top:16px; padding-top:10px; border-top:1px solid var(--gray-200);">
+      SAVE PROGRESS? &#x25B6; YES &nbsp; &#x25CB; NO
+    </div>
+  </div>
+</div>
+
+	
     <div class="detail-card">
       <svg class="detail-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5">
         <rect x="4" y="12" width="28" height="20" rx="2"/><path d="M24 12V8a6 6 0 0 0-12 0v4"/><circle cx="18" cy="22" r="3"/>
@@ -561,9 +720,9 @@
     <div class="rsvp-grid">
       <div class="rsvp-info fade-in">
         <p>Θα χαρούμε πολύ να σε έχουμε κοντά μας σε αυτή τη μοναδική μέρα. Παρακαλούμε συμπλήρωσε τη φόρμα για να γνωρίζουμε αν θα είσαι μαζί μας.</p>
-        <p><strong>Προθεσμία RSVP:</strong> 26 Αυγούστου 2026</p>
+        <p><strong>Προθεσμία RSVP:</strong> 01 Αυγούστου 2026</p>
         <p>Για ερωτήσεις επικοινώνησε μαζί μας στο <strong>giorgoseleni.wedding@gmail.com</strong></p>
-        <div class="rsvp-deadline">Απάντηση έως 26 · 08 · 2026</div>
+        <div class="rsvp-deadline">Απάντηση έως 01 · 08 · 2026</div>
       </div>
 
       <div class="fade-in">
@@ -642,8 +801,6 @@
   <h2 class="section-title">Οι στιγμές<br/><em>μας</em></h2>
   <div class="gallery-grid">
     <div class="g-item"><img src="saveTheDate.jpg" alt="moment 1"/></div>
-    <div class="g-item"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop" alt="moment 2"/></div>
-    
   </div>
 </div>
 
