@@ -780,18 +780,9 @@
           </button>
           <div class="form-status" id="formStatus" style="display:none;"></div>
         </form>
-		
-	<div style="margin-top:16px; display:flex; flex-direction:column; gap:10px;">
-    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Γάμος+Γιώργου+%26+Ελένης&dates=20260906T130000Z/20260906T200000Z&details=Τελετή+στον+Ιερό+Ναό+Αγίου+Γεωργίου&location=Ampeleon+Venue,+Αραδίππου"
-    target="_blank"
-    style="display:flex; align-items:center; justify-content:center; gap:10px; padding:14px 24px; border:1px solid rgba(201,169,110,0.4); color:var(--gold-light); text-decoration:none; font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:500;">
-    📅 Google Calendar
-    </a>
-    <a href="wedding.ics"
-    style="display:flex; align-items:center; justify-content:center; gap:10px; padding:14px 24px; border:1px solid rgba(201,169,110,0.4); color:var(--gold-light); text-decoration:none; font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:500;">
-    🍎 Apple Calendar (iPhone)
-    </a>
-        </div>
+
+        <div style="margin-top:16px;" id="calendarBtn"></div>
+
       </div>
     </div>
   </div>
@@ -935,6 +926,42 @@ if (guestsParam) {
     guestsSelect.value = guestsParam;
   }
 }
+
+// ── Calendar — ανίχνευση συσκευής ──
+(function () {
+  const isIOS     = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const isAndroid = /Android/.test(navigator.userAgent);
+  const btn       = document.getElementById('calendarBtn');
+  if (!btn) return;
+
+  const googleUrl =
+    'https://www.google.com/calendar/render?action=TEMPLATE' +
+    '&text=Γάμος+Γιώργου+%26+Ελένης' +
+    '&dates=20260906T130000Z/20260906T200000Z' +
+    '&details=Τελετή+στον+Ιερό+Ναό+Αγίου+Γεωργίου' +
+    '&location=Ampeleon+Venue,+Αραδίππου';
+
+  const linkStyle =
+    'display:flex;align-items:center;justify-content:center;gap:10px;' +
+    'padding:14px 24px;border:1px solid rgba(201,169,110,0.4);' +
+    'color:var(--gold-light);text-decoration:none;' +
+    'font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;';
+
+  if (isIOS) {
+    btn.innerHTML =
+      `<a href="wedding.ics" style="${linkStyle}">🍎 Πρόσθεσε στο Calendar</a>`;
+  } else if (isAndroid) {
+    btn.innerHTML =
+      `<a href="${googleUrl}" target="_blank" style="${linkStyle}">📅 Πρόσθεσε στο Calendar</a>`;
+  } else {
+    // Desktop — δείχνε και τα δύο
+    btn.innerHTML =
+      `<div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="${googleUrl}" target="_blank" style="${linkStyle}">📅 Google Calendar</a>
+        <a href="wedding.ics" style="${linkStyle}">🍎 Apple Calendar</a>
+      </div>`;
+  }
+})();
 </script>
 </body>
 </html>
